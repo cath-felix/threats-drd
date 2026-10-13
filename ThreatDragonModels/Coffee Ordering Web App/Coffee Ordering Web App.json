@@ -1300,13 +1300,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1431,13 +1424,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1648,7 +1634,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Query for Aggregated Sales Data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1662,12 +1648,12 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Query for Aggregated Sales Data"
             ],
             "id": "8d606c42-5463-4475-a1b9-7ab2a7f50e12",
             "source": {
-              "x": 640,
-              "y": 240
+              "cell": "c36d9266-7236-4c8d-9c50-99b0b59963cf",
+              "port": "15c63355-cb6a-459c-ad06-e8cf8ba8a9ab"
             },
             "target": {
               "cell": "fa14311c-4559-45ea-a9e0-a525e143a211",
@@ -1677,6 +1663,110 @@
               {
                 "x": 800,
                 "y": 310
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Aggregated Sales Data Retrieved",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Aggregated Sales Data Retrieved"
+            ],
+            "id": "f77527c5-aada-421b-a73c-5aba25f58c7f",
+            "source": {
+              "cell": "fa14311c-4559-45ea-a9e0-a525e143a211",
+              "port": "a4c22267-d212-4741-959e-a9495846e3f6"
+            },
+            "target": {
+              "cell": "c36d9266-7236-4c8d-9c50-99b0b59963cf",
+              "port": "15c63355-cb6a-459c-ad06-e8cf8ba8a9ab"
+            },
+            "vertices": [
+              {
+                "x": 800,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "d6dddaad-5a46-488e-bbea-ac524065e449",
+            "source": {
+              "cell": "c36d9266-7236-4c8d-9c50-99b0b59963cf",
+              "port": "c605d373-2c8c-48ee-8ed6-0fcae2c817fa"
+            },
+            "target": {
+              "cell": "1591b4b8-e0a7-40eb-8ce0-bd4e6597386a",
+              "port": "3f229793-a9e2-4b81-885c-0ff0ec636543"
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 130
               }
             ]
           }
