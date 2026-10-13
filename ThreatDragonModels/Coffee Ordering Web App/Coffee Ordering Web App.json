@@ -1044,7 +1044,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "",
+              "name": "Trust Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -1052,7 +1052,7 @@
               "containedElements": []
             },
             "labels": [
-              ""
+              "Trust Boundary"
             ],
             "id": "9e3f88e9-1a42-4f12-84aa-e881feaa10f4",
             "source": {
@@ -1199,8 +1199,8 @@
                 "text": "Manager"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1297,9 +1297,30 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "baf9ce4f-d983-409e-b9a0-4e666618c91f",
+                  "title": "Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, \naccess sales reports, or modify menu items and application \nconfigurations.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 48,
+                  "score": ""
+                }
+              ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1434,7 +1455,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "",
+              "name": "Trust Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -1442,7 +1463,7 @@
               "containedElements": []
             },
             "labels": [
-              ""
+              "Trust Boundary"
             ],
             "id": "b9b32b99-942b-4e27-84ca-eaa7da54f4eb",
             "source": {
@@ -1452,7 +1473,8 @@
             "target": {
               "x": 800,
               "y": 470
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -3831,6 +3853,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 47
+    "threatTop": 48
   }
 }
