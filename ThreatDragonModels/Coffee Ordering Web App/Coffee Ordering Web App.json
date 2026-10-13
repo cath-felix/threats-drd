@@ -2877,6 +2877,58 @@
                   "new": false,
                   "number": 32,
                   "score": ""
+                },
+                {
+                  "id": "5766336b-81a4-4fd5-9cf6-fad82e71ca4c",
+                  "title": "Application Code/Configuration Tampering ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Malicious modification of the application’s source code, server \nconfigurations, or environment variables could introduce backdoors or \ndisable security features.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 34,
+                  "score": ""
+                },
+                {
+                  "id": "bae931c4-7cf2-466f-974e-2291b9754b49",
+                  "title": "Staff Action Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Staff members (Barista, Manager, Administrator) could deny performing \nactions if audit logs are insufficient, not immutable, or can be tampered \nwith.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 35,
+                  "score": ""
+                },
+                {
+                  "id": "f50fe09d-dbce-465a-b0f8-85a74edb4e31",
+                  "title": "Customer PII Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery \naddresses, and order history.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 37,
+                  "score": ""
+                },
+                {
+                  "id": "288a1c35-58ae-4ca6-99cc-6665f686c88f",
+                  "title": "Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members \ndue to insecure storage or unencrypted transmission.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 39,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -2887,6 +2939,13 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -3194,6 +3253,32 @@
                   "modelType": "default",
                   "new": false,
                   "number": 33,
+                  "score": ""
+                },
+                {
+                  "id": "f58fc1a9-a8aa-44d9-8b46-8fb81a503fa9",
+                  "title": "Staff Action Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Staff members (Barista, Manager, Administrator) could deny performing \nactions if audit logs are insufficient, not immutable, or can be tampered \nwith.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 36,
+                  "score": ""
+                },
+                {
+                  "id": "1b22e7fb-5c23-418c-a1b6-4f82b65c4b79",
+                  "title": "Customer PII Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery \naddresses, and order history.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 38,
                   "score": ""
                 }
               ]
@@ -3649,6 +3734,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 33
+    "threatTop": 39
   }
 }
