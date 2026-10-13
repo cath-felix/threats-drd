@@ -1109,8 +1109,8 @@
           },
           {
             "position": {
-              "x": 580,
-              "y": 160
+              "x": 560,
+              "y": 170
             },
             "size": {
               "width": 140,
@@ -1633,7 +1633,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1654,12 +1655,26 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "a1670b4e-9007-4db7-a178-efb32e7dffcd",
+                  "title": "Staff Credential Disclosure ",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members due to insecure storage or unencrypted transmission.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": []
             },
             "labels": [
@@ -1678,6 +1693,73 @@
               {
                 "x": 490,
                 "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Navigation Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9566c839-ea1e-4348-950f-d9e3b2a9a4e4",
+                  "title": "Web Application Server DoS ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker could flood the Web Application Server with excessive requests, making it unavailable.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Navigation Request"
+            ],
+            "id": "eee4b35c-7ac9-4a9f-80eb-b290ca31147b",
+            "source": {
+              "x": 671,
+              "y": 270
+            },
+            "target": {
+              "cell": "1f047df1-dd0e-4604-8061-8be43922ef92",
+              "port": "9b58db02-c612-4f6f-85e9-14c9c04cf00b"
+            },
+            "vertices": [
+              {
+                "x": 790,
+                "y": 340
               }
             ]
           },
@@ -1734,7 +1816,7 @@
             ],
             "id": "70512404-6163-4cbf-945e-e748cf9e319b",
             "source": {
-              "x": 630,
+              "x": 640,
               "y": 270
             },
             "target": {
@@ -1747,59 +1829,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Navigation Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Navigation Request"
-            ],
-            "id": "eee4b35c-7ac9-4a9f-80eb-b290ca31147b",
-            "source": {
-              "x": 671,
-              "y": 270
-            },
-            "target": {
-              "cell": "1f047df1-dd0e-4604-8061-8be43922ef92",
-              "port": "9b58db02-c612-4f6f-85e9-14c9c04cf00b"
-            },
-            "vertices": [
-              {
-                "x": 790,
-                "y": 340
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1820,12 +1851,26 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "b53b93cf-6270-4491-bf57-3e100e84797a",
+                  "title": "Order Data Tampering ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": []
             },
             "labels": [
@@ -1905,7 +1950,17 @@
                 "x": 860,
                 "y": 790
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ]
       },
@@ -2614,6 +2669,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 27
+    "threatTop": 30
   }
 }
