@@ -2955,6 +2955,58 @@
                   "new": false,
                   "number": 42,
                   "score": ""
+                },
+                {
+                  "id": "4741e37a-9c25-4299-a9b3-69662a5b8dd6",
+                  "title": "MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database, \nmaking it unresponsive.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 44,
+                  "score": ""
+                },
+                {
+                  "id": "f5438db4-ec1a-4237-9076-c82b5210060f",
+                  "title": "Customer to Staff Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A customer could exploit a vulnerability to gain unauthorized access to \nBarista, Manager, or Administrator functionalities.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 45,
+                  "score": ""
+                },
+                {
+                  "id": "95b33d21-df40-4674-8830-29db0d65d977",
+                  "title": "Barista/Manager to Administrator  Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A Barista or Manager could exploit a vulnerability to gain Administrator \nprivileges.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 46,
+                  "score": ""
+                },
+                {
+                  "id": "b42b2eaf-b1b5-4d7c-9e30-3b6369a0cec6",
+                  "title": "Horizontal Privilege Escalation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Gaining unauthorized access to another user’s account within the same \nprivilege level.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 47,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -3311,6 +3363,19 @@
                   "modelType": "default",
                   "new": false,
                   "number": 40,
+                  "score": ""
+                },
+                {
+                  "id": "035bf51e-70d4-4391-a0fa-f58959945144",
+                  "title": "MongoDB Database DoS ",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database, \nmaking it unresponsive.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 43,
                   "score": ""
                 }
               ]
@@ -3766,6 +3831,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 42
+    "threatTop": 47
   }
 }
