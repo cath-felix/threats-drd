@@ -1085,6 +1085,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1168,7 +1169,6 @@
               ]
             },
             "id": "c36d9266-7236-4c8d-9c50-99b0b59963cf",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Web Application Server",
@@ -1205,6 +1205,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -1288,7 +1289,6 @@
               ]
             },
             "id": "1591b4b8-e0a7-40eb-8ce0-bd4e6597386a",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Manager",
@@ -1299,6 +1299,13 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1322,6 +1329,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -1405,7 +1413,6 @@
               ]
             },
             "id": "fa14311c-4559-45ea-a9e0-a525e143a211",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "Store",
@@ -1470,6 +1477,110 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Login Authenticated and Authorized",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login Authenticated and Authorized"
+            ],
+            "id": "980f75ca-753b-426b-9cd2-5caec9ca0602",
+            "source": {
+              "cell": "c36d9266-7236-4c8d-9c50-99b0b59963cf",
+              "port": "59fd4828-4517-4695-ab78-ac2220de68a9"
+            },
+            "target": {
+              "cell": "1591b4b8-e0a7-40eb-8ce0-bd4e6597386a",
+              "port": "1daf2dbb-60d1-4bd6-aaf3-30093afd0d57"
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 310
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login",
+              "description": "Manager logs into the staff interface",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login"
+            ],
+            "id": "660281da-1137-439c-aa26-13c3e1eb544e",
+            "source": {
+              "cell": "1591b4b8-e0a7-40eb-8ce0-bd4e6597386a",
+              "port": "1daf2dbb-60d1-4bd6-aaf3-30093afd0d57"
+            },
+            "target": {
+              "cell": "c36d9266-7236-4c8d-9c50-99b0b59963cf",
+              "port": "59fd4828-4517-4695-ab78-ac2220de68a9"
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -1486,14 +1597,14 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "660281da-1137-439c-aa26-13c3e1eb544e",
+            "id": "d3a3636b-6c45-4ceb-ba86-1bad74d2774b",
             "source": {
-              "x": 200,
-              "y": 220
+              "x": 140,
+              "y": 270
             },
             "target": {
               "cell": "c36d9266-7236-4c8d-9c50-99b0b59963cf",
-              "port": "59fd4828-4517-4695-ab78-ac2220de68a9"
+              "port": "348f42ec-5cdd-4cd9-8754-1f916947c2cf"
             }
           }
         ]
