@@ -2851,6 +2851,32 @@
                   "new": false,
                   "number": 11,
                   "score": ""
+                },
+                {
+                  "id": "74f1bbe1-48d3-471b-846b-ec70513ab004",
+                  "title": "Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, \naccess sales reports, or modify menu items and application \nconfigurations.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
+                },
+                {
+                  "id": "c5a93061-d2e8-4c73-b95a-f8a628729403",
+                  "title": "Order Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, \nstatus) in transit or at rest.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 32,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -2877,8 +2903,8 @@
                 "text": "Barista"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2975,9 +3001,36 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "ac8c02fb-d739-4c25-bbc1-dfde9f01ae16",
+                  "title": "Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, \naccess sales reports, or modify menu items and application \nconfigurations.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                },
+                {
+                  "id": "f31bbed4-da2d-4a7f-b454-3a0ee5eb17d4",
+                  "title": "Web Application Server Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker might set up a fraudulent web server to phish user \ncredentials or intercept sensitive data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -3116,15 +3169,34 @@
                   "new": false,
                   "number": 10,
                   "score": ""
+                },
+                {
+                  "id": "559e6a38-239d-4c44-8b1d-854d04bc4efb",
+                  "title": "Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, \naccess sales reports, or modify menu items and application \nconfigurations.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                },
+                {
+                  "id": "8b164ba5-cdaa-425b-b6f0-ccc21f0f8f80",
+                  "title": "Order Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, \nstatus) in transit or at rest.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 33,
+                  "score": ""
                 }
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3577,6 +3649,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 27
+    "threatTop": 33
   }
 }
