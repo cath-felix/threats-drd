@@ -1650,73 +1650,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "a1670b4e-9007-4db7-a178-efb32e7dffcd",
-                  "title": "Staff Credential Disclosure ",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information disclosure",
-                  "description": "Exposure of usernames, passwords, or session tokens for staff members due to insecure storage or unencrypted transmission.",
-                  "mitigation": "",
-                  "modelType": "default",
-                  "new": false,
-                  "number": 28,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Login"
-            ],
-            "id": "d66c5042-e75d-4648-b067-51fb059a8514",
-            "source": {
-              "x": 599,
-              "y": 270
-            },
-            "target": {
-              "cell": "1f047df1-dd0e-4604-8061-8be43922ef92",
-              "port": "9b58db02-c612-4f6f-85e9-14c9c04cf00b"
-            },
-            "vertices": [
-              {
-                "x": 490,
-                "y": 350
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Navigation Request",
               "description": "",
               "outOfScope": false,
@@ -1829,6 +1762,133 @@
             "shape": "flow",
             "attrs": {
               "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Menu Item Addition Confirmation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Menu Item Addition Confirmation"
+            ],
+            "id": "31a917e5-9e37-49cc-9fb6-ff06b06c7ad7",
+            "source": {
+              "x": 1100,
+              "y": 660
+            },
+            "target": {
+              "x": 720,
+              "y": 690
+            },
+            "vertices": [
+              {
+                "x": 970,
+                "y": 740
+              },
+              {
+                "x": 860,
+                "y": 790
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "a1670b4e-9007-4db7-a178-efb32e7dffcd",
+                  "title": "Staff Credential Disclosure ",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members due to insecure storage or unencrypted transmission.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login"
+            ],
+            "id": "d66c5042-e75d-4648-b067-51fb059a8514",
+            "source": {
+              "x": 599,
+              "y": 270
+            },
+            "target": {
+              "cell": "1f047df1-dd0e-4604-8061-8be43922ef92",
+              "port": "9b58db02-c612-4f6f-85e9-14c9c04cf00b"
+            },
+            "vertices": [
+              {
+                "x": 490,
+                "y": 350
+              },
+              {
+                "x": 590,
+                "y": 490
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "targetMarker": {
@@ -1893,62 +1953,6 @@
               {
                 "x": 1020,
                 "y": 620
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Menu Item Addition Confirmation",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Menu Item Addition Confirmation"
-            ],
-            "id": "31a917e5-9e37-49cc-9fb6-ff06b06c7ad7",
-            "source": {
-              "x": 1100,
-              "y": 660
-            },
-            "target": {
-              "x": 720,
-              "y": 690
-            },
-            "vertices": [
-              {
-                "x": 970,
-                "y": 740
-              },
-              {
-                "x": 860,
-                "y": 790
               }
             ],
             "tools": {
