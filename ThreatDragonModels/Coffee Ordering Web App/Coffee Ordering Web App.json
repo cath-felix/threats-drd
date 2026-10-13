@@ -2929,6 +2929,32 @@
                   "new": false,
                   "number": 39,
                   "score": ""
+                },
+                {
+                  "id": "02b964ab-459b-41bf-97d9-e4f18002a2e8",
+                  "title": "Application Code and Configuration Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Exposure of source code, server configurations, environment variables, \nor API keys.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 41,
+                  "score": ""
+                },
+                {
+                  "id": "2f2d703f-dc03-4635-a149-6f1e1e9edc20",
+                  "title": "Web Application Server DoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker could flood the Web Application Server with excessive \nrequests, making it unavailable.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 42,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -2939,13 +2965,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3279,6 +3298,19 @@
                   "modelType": "default",
                   "new": false,
                   "number": 38,
+                  "score": ""
+                },
+                {
+                  "id": "a50e11e2-517f-4c5d-9a1b-a02308a59773",
+                  "title": "Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members \ndue to insecure storage or unencrypted transmission.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 40,
                   "score": ""
                 }
               ]
@@ -3734,6 +3766,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 39
+    "threatTop": 42
   }
 }
